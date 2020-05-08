@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfHomePage">
+   <children>
+      <FlowPane layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="673.0">
+         <children>
+            <Button fx:id="passwordManagerButton" mnemonicParsing="false" onAction="#openPasswordManager" prefHeight="125.0" prefWidth="700.0" text="Password Manager">
+               <font>
+                  <Font name="Calibri Bold Italic" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="checksumGeneratorButton" mnemonicParsing="false" onAction="#openChecksumGenerator" prefHeight="125.0" prefWidth="700.0" text="Checksum Generator">
+               <font>
+                   <Font name="Calibri Bold Italic" size="50.0" />
+               </font>
+            </Button>
+             <Button fx:id="protectionForStringsButton" mnemonicParsing="false" onAction="#openProtectionForStrings" prefHeight="125.0" prefWidth="700.0" text="Protection for Strings">
+                 <font>
+                     <Font name="Calibri Bold Italic" size="50.0" />
+                 </font>
+             </Button>
+             <Button fx:id="protectionForFilesButton" mnemonicParsing="false" onAction="#openProtectionForFiles" prefHeight="125.0" prefWidth="700.0" text="Protection for Files">
+                 <font>
+                     <Font name="Calibri Bold Italic" size="50.0" />
+                 </font>
+             </Button>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

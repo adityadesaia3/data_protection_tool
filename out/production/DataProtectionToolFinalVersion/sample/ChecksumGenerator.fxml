@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfChecksumGenerator">
+    <children>
+      <AnchorPane fx:id="mainAnchorPane" disable="true" layoutX="13.0" layoutY="82.0" prefHeight="500.0" prefWidth="774.0">
+         <children>
+              <Button fx:id="buttonChooseFile" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressChooseFile" prefHeight="37.0" prefWidth="131.0" text="Choose File">
+                  <font>
+                      <Font name="Calibri Bold" size="17.0" />
+                  </font>
+              </Button>
+              <Button fx:id="buttonCheckIntegrity" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="67.0" mnemonicParsing="false" onAction="#pressCheckIntegrity" prefHeight="37.0" prefWidth="131.0" text="Check Integrity">
+                  <font>
+                      <Font name="Calibri Bold" size="17.0" />
+                  </font>
+              </Button>
+              <TextField fx:id="textFieldForCheckIntegrity" layoutX="165.0" layoutY="67.0" prefHeight="37.0" prefWidth="592.0" promptText="Enter the Original Checksum Value">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+              <TextField fx:id="textFieldForChooseFile" layoutX="165.0" layoutY="14.0" prefHeight="37.0" prefWidth="592.0" text="null">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextArea fx:id="textArea" layoutX="14.0" layoutY="177.0" prefHeight="224.0" prefWidth="747.0">
+               <font>
+                  <Font name="Calibri" size="21.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="textFieldForString" layoutX="18.0" layoutY="118.0" prefHeight="37.0" prefWidth="740.0" promptText="Enter the string">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="buttonGenerateChecksumForString" layoutX="18.0" layoutY="420.0" mnemonicParsing="false" onAction="#pressGenerateChecksumForString" prefHeight="53.0" prefWidth="312.0" text="Generate Checksum For String" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonGenerateChecksumForFile" layoutX="455.0" layoutY="420.0" mnemonicParsing="false" onAction="#pressGenerateChecksumForFile" prefHeight="53.0" prefWidth="303.0" text="Generate Checksum For FILE">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="14.0" prefHeight="69.0" prefWidth="774.0">
+         <children>
+            <ComboBox fx:id="comboBoxForAlgorithmNames" layoutX="396.0" layoutY="14.0" onAction="#selectAlgorithmName" prefHeight="40.0" prefWidth="205.0" promptText="Choose Hash Algorithm" />
+              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="14.0" prefHeight="40.0" prefWidth="184.0" text="Hash algorithm  ---&gt;" textAlignment="CENTER" textFill="#a1481c">
+                  <font>
+                      <Font name="Calibri Bold" size="21.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

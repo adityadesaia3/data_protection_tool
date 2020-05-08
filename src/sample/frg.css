@@ -1,0 +1,11 @@
+
+.forgotBtn{
+    -fx-text-fill: #9d9a9a;
+
+}
+.forgotBtn|hover{
+    -fx-text-fill: #19389E;
+    -fx-underline: true;
+}
+
+

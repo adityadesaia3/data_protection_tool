@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #b5afaf;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Display_Form">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #C0392B;" />
+      <Button layoutX="1.0" layoutY="250.0" mnemonicParsing="false" onAction="#Display_Website" prefHeight="100.0" prefWidth="250.0" text="Website">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Button>
+      <Button layoutX="1.0" layoutY="78.0" mnemonicParsing="false" onAction="#Display_Email" prefHeight="100.0" prefWidth="250.0" text="Email">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Button>
+      <Button layoutX="1.0" layoutY="424.0" mnemonicParsing="false" onAction="#Display_Notes" prefHeight="100.0" prefWidth="250.0" text="Notes">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Button>
+      <TextField fx:id="email" layoutX="355.0" layoutY="149.0" prefHeight="35.0" prefWidth="350.0" promptText="Email" visible="false" />
+      <TextField fx:id="password" layoutX="355.0" layoutY="248.0" prefHeight="35.0" prefWidth="350.0" promptText="Password" visible="false" />
+      <Button fx:id="s1" layoutX="553.0" layoutY="350.0" mnemonicParsing="false" onAction="#search_email" prefHeight="50.0" prefWidth="135.0" text="Search" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="d1" layoutX="547.0" layoutY="456.0" mnemonicParsing="false" onAction="#delete_Email" prefHeight="50.0" prefWidth="135.0" text="Delete" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="n1" layoutX="312.0" layoutY="350.0" mnemonicParsing="false" onAction="#next_button" prefHeight="50.0" prefWidth="135.0" text="Next" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="u1" layoutX="309.0" layoutY="456.0" mnemonicParsing="false" onAction="#Update_Email" prefHeight="50.0" prefWidth="142.0" text="Update" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="355.0" layoutY="169.0" prefHeight="35.0" prefWidth="350.0" promptText="Website" visible="false" />
+      <TextField fx:id="password1" layoutX="355.0" layoutY="282.0" prefHeight="35.0" prefWidth="350.0" promptText="Password" visible="false" />
+      <Button fx:id="s2" layoutX="546.0" layoutY="384.0" mnemonicParsing="false" onAction="#search_website" prefHeight="50.0" prefWidth="135.0" text="Search" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="u2" layoutX="309.0" layoutY="493.0" mnemonicParsing="false" onAction="#Update_Website" prefHeight="50.0" prefWidth="141.0" text="Update" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="d2" layoutX="553.0" layoutY="493.0" mnemonicParsing="false" onAction="#delete_Website" prefHeight="50.0" prefWidth="135.0" text="Delete" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="n2" layoutX="312.0" layoutY="384.0" mnemonicParsing="false" onAction="#next_button_Website" prefHeight="50.0" prefWidth="135.0" text="Next" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="ta" layoutX="362.0" layoutY="112.0" prefHeight="334.0" prefWidth="366.0" promptText="NOTES" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="s3" layoutX="614.0" layoutY="456.0" mnemonicParsing="false" onAction="#search_note" prefHeight="50.0" prefWidth="135.0" text="Search" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="n3" layoutX="288.0" layoutY="456.0" mnemonicParsing="false" onAction="#next_button_Notes" prefHeight="50.0" prefWidth="135.0" text="Next" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="u3" layoutX="284.0" layoutY="536.0" mnemonicParsing="false" onAction="#Update_Notes" prefHeight="50.0" prefWidth="143.0" text="Update" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="d3" layoutX="621.0" layoutY="536.0" mnemonicParsing="false" onAction="#delete_Notes" prefHeight="50.0" prefWidth="135.0" text="Delete" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="header" layoutX="363.0" layoutY="65.0" prefHeight="35.0" prefWidth="366.0" promptText="Header" visible="false" />
+
+
+
+   </children>
+</AnchorPane>

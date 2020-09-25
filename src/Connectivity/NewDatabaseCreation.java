@@ -14,7 +14,7 @@ public class NewDatabaseCreation
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/";
-            connection = DriverManager.getConnection(url, "root", "12345");
+            connection = DriverManager.getConnection(url, "root", "");
             //System.out.println("Connected");
             statement = connection.createStatement();
 

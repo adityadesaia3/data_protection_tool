@@ -13,7 +13,7 @@ public class Connect {
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/Record";
-            conn = DriverManager.getConnection(url, "root", "12345");
+            conn = DriverManager.getConnection(url, "root", "");
             System.out.println("Connect");
         }
         catch (Exception ae)

@@ -1,4 +1,4 @@
-# data_protection_tool
+# Data_Protection_Tool
 
 ### set up
 1.  Install javafx-sdk-11.0.2 or greater
@@ -8,6 +8,6 @@
 3.  Path to the jar file: out -> artifacts -> DataProtectionToolFinalVersion_jar.
 4.  If you are using javafx-sdk-11.0.2 only and it is installed in path "C:\Program Files\Java\" then, to run the jar file, double click on cmd file or manually type the command from the .cmd file.
 
-Softwares:
+### Software Requirement
 java version 11.0.2 or greater
 java-fx 11.0.2
